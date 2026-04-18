@@ -1,0 +1,18 @@
+<?php
+// Configurações do banco de dados
+define('DB_HOST', 'localhost'); // ou o IP
+define('DB_USER', 'root'); // Substitua pelo seu usuário do banco
+define('DB_PASS', ''); // Substitua pela sua senha do banco
+define('DB_NAME', 'financeiro_db'); // Substitua pelo nome do seu banco de dados
+
+// Função para conectar ao banco de dados (opcional, para uso global)
+function conectarDB() {
+    try {
+        $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $pdo;
+    } catch (PDOException $e) {
+        die("Erro na conexão: " . $e->getMessage());
+    }
+}
+?>

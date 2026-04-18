@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+    color: #f8fafc;
+}
+
+/* Padronização Glassmorphism 1.5rem */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 12px 12px 0;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    border-radius: 0 12px 12px 0;
+}
+
+.sidebar-active {
+    background: rgba(59, 130, 246, 0.15);
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 12px 12px 0;
+}
+
+.sidebar-active .material-icons {
+    color: #3b82f6;
+}
+
+.body-login {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+.glass-login {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.5rem;
+}
