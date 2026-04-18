@@ -27,7 +27,7 @@ include_once 'modals.php';
             </a>
 
             <a href="config_conta.php" class="sidebar-item flex items-center gap-3 p-3 transition-all <?php echo ($pagina_atual == 'config_conta.php') ? 'sidebar-active text-white' : 'opacity-60 hover:opacity-100 text-slate-300'; ?>">
-                <span class="material-icons text-xl">person_settings</span> 
+                <span class="material-icons text-xl">person</span> 
                 <span class="font-medium">Minha Conta</span>
             </a>
 
@@ -47,7 +47,7 @@ include_once 'modals.php';
     </a>
 
     <div class="glass p-4 rounded-2xl bg-blue-500/10 border-blue-500/20">
-        <p class="text-[10px] uppercase font-bold opacity-50 mb-1 text-blue-200">Bossoroca System</p>
-        <p class="text-xs font-bold truncate text-white opacity-80">v1.0 - 2026</p>
+        <p class="text-[10px] uppercase font-bold opacity-50 mb-1 text-blue-200">wn.dev.br</p>
+        <p class="text-xs font-bold truncate text-white opacity-80">v0.1-beta1</p>
     </div>
 </aside>
